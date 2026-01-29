@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1769709262 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\pliktekstowy.cpp
+	"PlikTekstowy.h"
+
+1769709276 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\pliktekstowy.h
+	<iostream>
+	<fstream>
+	<string>
+
+1769708528 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\adresat.cpp
+	"Adresat.h"
+
+1769708567 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\adresat.h
+	<iostream>
+	<vector>
+
+1769708595 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\adresatmenedzer.cpp
+	"AdresatMenedzer.h"
+	<iostream>
+	<string>
+
+1769708602 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\adresatmenedzer.h
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"Adresat.h"
+	"PlikZAdresatami.h"
+	"MetodyPomocnicze.h"
+
+1769713450 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\plikzadresatami.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"Adresat.h"
+	"MetodyPomocnicze.h"
+	"PlikTekstowy.h"
+
+1769709253 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\metodypomocnicze.h
+	<iostream>
+	<sstream>
+	<fstream>
+	<algorithm>
+
+1769708608 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\ksiazkaadresowa.cpp
+	"KsiazkaAdresowa.h"
+
+1769708642 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\ksiazkaadresowa.h
+	<iostream>
+	"UzytkownikMenedrzer.h"
+	"AdresatMenedzer.h"
+
+1769709508 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\uzytkownikmenedrzer.h
+	<iostream>
+	<vector>
+	<fstream>
+	<sstream>
+	"Uzytkownik.h"
+	"PlikZUzytkownikami.h"
+	"MetodyPomocnicze.h"
+
+1769709486 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\uzytkownik.h
+	<iostream>
+	<vector>
+
+1769713716 c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\plikzuzytkownikami.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<cstdlib>
+	"Uzytkownik.h"
+	"MetodyPomocnicze.h"
+	"PlikTekstowy.h"
+
+1769709242 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\main.cpp
+	<iostream>
+	"KsiazkaAdresowa.h"
+	<cstdlib>
+
+1769709247 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\metodypomocnicze.cpp
+	"MetodyPomocnicze.h"
+
+1769709479 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\uzytkownik.cpp
+	"Uzytkownik.h"
+
+1769709513 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\uzytkownikmenedzer.cpp
+	"UzytkownikMenedrzer.h"
+	<iostream>
+	<string>
+
+1769713450 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\plikzadresatami.cpp
+	"PlikZAdresatami.h"
+
+1769713450 source:c:\users\frane\desktop\programy c++\programy c++\ksiazka_adresowav1\plikzuzytkownikami.cpp
+	"PlikZUzytkownikami.h"
+

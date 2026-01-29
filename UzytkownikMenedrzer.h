@@ -25,16 +25,21 @@ class UzytkownikMenedzer
     
 
 public:
-    UzytkownikMenedzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami), idZalogowanegoUzytkownika(0) {};
+    UzytkownikMenedzer(string nazwaPlikuZUzytkownikami) : plikZUzytkownikami(nazwaPlikuZUzytkownikami), idZalogowanegoUzytkownika(0) {
+      
+        cout << "Wczytywanie uzytkownikow z pliku..." << endl;
+        plikZUzytkownikami.wczytajUzytkownikowZPliku(uzytkownicy);
+        cout << "Wczytano " << uzytkownicy.size() << " uzytkownikow z pliku." << endl;
+    };
    
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
-    void wczytajUzytkownikowZPliku();
+   // void wczytajUzytkownikowZPliku();
     void logowanieUzytkownika();
     int  pobierzIdZalogowanegoUzytkownika();
     void wylogowanieUzytkownika();
     void zmianaHaslaZalogowanegoUzytkownika();
-   
+    bool czyUzytkownikJestZalogowany();
 
 };
 #endif

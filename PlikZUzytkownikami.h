@@ -3,18 +3,18 @@
 
 #include <iostream>
 #include <vector>
-//#include <windows.h>
+#include <windows.h>
 #include <fstream>
 #include <cstdlib>
 
 #include "Uzytkownik.h"
 #include "MetodyPomocnicze.h"
+#include "PlikTekstowy.h"
 
 using namespace std;
 
-class PlikZUzytkownikami
+class PlikZUzytkownikami : public PlikTekstowy
 {
-    const string nazwaPlikuZUzytkownikami;
    // fstream plikTekstowy;
 
     bool czyPlikJestPusty();
@@ -23,7 +23,7 @@ Uzytkownik pobierzDaneUzytkownika(string daneJednegoUzytkownikaOddzielonePionowy
 
 
 public:
-    PlikZUzytkownikami(string NAZWAPLIKUZUZYTKOWNIKAMI) : nazwaPlikuZUzytkownikami (NAZWAPLIKUZUZYTKOWNIKAMI) {} ;
+    PlikZUzytkownikami(string nazwaPlikuZUzytkownikami);
     void dopiszUzytkownikaDoPliku(Uzytkownik uzytkownik);
     void wczytajUzytkownikowZPliku(vector <Uzytkownik> &uzytkownicy);
     void zapiszWszystkichUzytkownikowDoPliku(vector <Uzytkownik> &uzytkownicy);

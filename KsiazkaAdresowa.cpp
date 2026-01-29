@@ -13,10 +13,13 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
     uzytkownikMenedzer.logowanieUzytkownika();
-    // Wczytaj adresatów dla zalogowanego użytkownika
-    adresatMenedzer.zalogujUzytkownika(
-        uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika()
-    );
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer = new AdresatMenedzer(NAZWA_PLIKU_Z_ADRESATAMI, uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
+        
+    }
+    
+   
 }
 
 int KsiazkaAdresowa::pobierzIdZalogowanegoUzytkownika()
@@ -27,7 +30,8 @@ void KsiazkaAdresowa::wylogowanieUzytkownika()
 {
     uzytkownikMenedzer.wylogowanieUzytkownika();
     // Wyczyść dane adresatów po wylogowaniu
-    adresatMenedzer.zalogujUzytkownika(0);
+    delete adresatMenedzer;
+    adresatMenedzer = NULL;
 }
 
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
@@ -37,11 +41,29 @@ void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
 {
-    adresatMenedzer.wyswietlWszystkichAdresatow();
+    adresatMenedzer->wyswietlWszystkichAdresatow();
 }
 
 void KsiazkaAdresowa::dodajAdresata()
 {
-    adresatMenedzer.dodajAdresata();
+    adresatMenedzer->dodajAdresata();
 }
 
+void KsiazkaAdresowa::usunAdresata()
+{
+    adresatMenedzer->usunAdresata();
+}
+void KsiazkaAdresowa::edytujAdresata()
+{
+    adresatMenedzer->edytujAdresata();
+}
+
+void KsiazkaAdresowa::wyszukajPoImieniu()
+{
+    adresatMenedzer->wyszukajPoImieniu();
+}
+
+void KsiazkaAdresowa::wyszukajPoNazwisku()
+{
+    adresatMenedzer->wyszukajPoNazwisku();
+}

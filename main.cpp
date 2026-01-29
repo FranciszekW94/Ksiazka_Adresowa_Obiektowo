@@ -72,19 +72,19 @@ int main ()
                 //system("clear");
                 break;
             case '2':
-                // Wyszukaj po imieniu 
+                ksiazkaAdresowa.wyszukajPoImieniu();
                 break;
             case '3':
-                // Wyszukaj po nazwisku 
+                ksiazkaAdresowa.wyszukajPoNazwisku();
                 break;
             case '4':
                 ksiazkaAdresowa.wyswietlWszystkichAdresatow();
                 break;
             case '5':
-                // Usuń adresata 
+                ksiazkaAdresowa.usunAdresata();
                 break;
             case '6':
-                // Edytuj adresata 
+                ksiazkaAdresowa.edytujAdresata();
                 break;
             case '7':
                 ksiazkaAdresowa.zmianaHaslaZalogowanegoUzytkownika();

@@ -79,12 +79,6 @@ void UzytkownikMenedzer:: wypiszWszystkichUzytkownikow()
         }
 }
 
-void UzytkownikMenedzer::wczytajUzytkownikowZPliku()
-{
-    cout << "Wczytywanie uzytkownikow z pliku..." << endl;
-    plikZUzytkownikami.wczytajUzytkownikowZPliku(uzytkownicy);
-    cout << "Wczytano " << uzytkownicy.size() << " uzytkownikow z pliku." << endl;
-}
 
 
 
@@ -177,3 +171,11 @@ void UzytkownikMenedzer:: zmianaHaslaZalogowanegoUzytkownika()
 }
 
 
+bool UzytkownikMenedzer:: czyUzytkownikJestZalogowany()
+{
+    if (idZalogowanegoUzytkownika > 0)
+        return true;
+    else
+        return false;
+   
+}
